@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shane Yeoh</title>
-  <meta name="description" content="Shane Yeoh — product manager. Previously at Affinidi and ComfortDelGro, now at The Straits Times.">
+  <meta name="description" content="Shane Yeoh — product. Previously at Affinidi, ComfortDelgro and The Straits Times, now at Singapore's judiciary.">
   <meta name="author" content="Shane Yeoh">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Shane Yeoh">
-  <meta property="og:description" content="Product manager. Previously at Affinidi and ComfortDelGro, now at The Straits Times.">
+  <meta property="og:description" content="Product. Previously at Affinidi, ComfortDelgro and The Straits Times, now at Singapore's judiciary.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.shaneyeoh.com/">
 
@@ -60,10 +60,10 @@
     h1 {
       font-family: "Playfair Display", Georgia, serif;
       font-weight: 700;
-      font-size: clamp(2.25rem, 5.5vw, 3.5rem);
-      line-height: 1.15;
-      text-align: center;
-      margin-bottom: clamp(3rem, 9vh, 5.5rem);
+      font-size: inherit;       /* same size as body copy */
+      line-height: 1.55;
+      text-align: left;
+      margin-bottom: 2.4rem;
     }
 
     /* ---- Body copy ---- */
@@ -72,14 +72,10 @@
       max-width: 60rem;
     }
 
-    .u {
-      text-decoration: underline;
-      text-underline-offset: 0.2em;
-    }
-
     /* ---- Projects ---- */
     .projects {
       margin-bottom: 2.4rem;
+      max-width: 60rem;
     }
 
     .projects p {
@@ -92,6 +88,18 @@
 
     .projects li {
       margin-bottom: 0.35rem;
+    }
+
+    .projects a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+      transition: color 0.15s ease;
+    }
+
+    .projects a:hover,
+    .projects a:focus-visible {
+      color: #0b3d91;           /* deep blue */
     }
 
     /* ---- Contact ---- */
@@ -115,6 +123,7 @@
         padding: 2.5rem 1.5rem 3rem;
       }
 
+      h1,
       main p {
         margin-bottom: 1.8rem;
       }
@@ -122,6 +131,12 @@
       .contact {
         padding-top: 3rem;
         overflow-wrap: break-word;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .projects a {
+        transition: none;
       }
     }
   </style>
@@ -133,21 +148,26 @@
     </header>
 
     <main>
-      <p>Studied law. Preferred its theory to practice. Wanted to start a business instead. Went into tech.</p>
+      <p>Studied law. Preferred building and selling things. Went into tech.</p>
 
-      <p>First job as a product manager at <span class="u">Affinidi</span>, a startup.</p>
+      <p>Joined a startup, Affinidi, something to make the cross-border patient journey a lot more pleasant. I learnt a lifetime's worth of product craft and still got to wear many other hats. Sat across the table from patients, medical concierges and large healthcare groups.</p>
 
-      <p>Then, I was a product manager at <span class="u">ComfortDelgro</span>.</p>
+      <p>Then I handled the build and migration of enterprise software and piloted AI integrations at ComfortDelgro, a regional transportation and logistics company. Complex systems, complex stakeholders, lots of negotiation.</p>
 
-      <p>Now, I'm a product manager at <span class="u">The Straits Times</span>.</p>
+      <p>Next, I helped make digital news media products more fun at The Straits Times, Singapore's newspaper of record. Figured out where AI really matters to consumers and fell in love with staring at data to make sense of things.</p>
+
+      <p>Now, I'm at Singapore's judiciary. Learning even more about large organisations and how they think.</p>
+
+      <p>I like doing things.</p>
+
+      <p>Currently learning: Organisational theory, mechanistic interpretability, how to do a smoother muay thai switch kick, how to not kill my bonsai.</p>
 
       <section class="projects" aria-label="Projects">
         <p>Projects:</p>
         <ul>
-          <li><span class="u">Ergo</span></li>
-          <li><span class="u">Thou</span></li>
-          <li><span class="u">Tadaki</span></li>
-          <li><span class="u">Mirrur</span></li>
+          <li><a href="https://secondorders.co/">Second Orders</a> - a podcast on what happens after the future</li>
+          <li><a href="https://ergoapp.co/">Ergo</a> - a fitness tracker for your worldview and values</li>
+          <li><a href="https://www.mirrur.club/">Mirrur</a> - a website to take personality quizzes and share your results with friends</li>
         </ul>
       </section>
     </main>
