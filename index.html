@@ -56,12 +56,12 @@
       flex-direction: column;
     }
 
-    /* ---- Header ---- */
-    h1 {
+    /* ---- Section title ---- */
+    .section-title {
       font-family: "Playfair Display", Georgia, serif;
       font-weight: 700;
-      font-size: inherit;       /* same size as body copy */
-      line-height: 1.55;
+      font-size: 1.3em;
+      line-height: 1.4;
       text-align: left;
       margin-bottom: 2.4rem;
     }
@@ -111,7 +111,7 @@
         padding: 2.5rem 1.5rem 3rem;
       }
 
-      h1,
+      .section-title,
       main p {
         margin-bottom: 1.8rem;
       }
@@ -126,31 +126,37 @@
 <body>
   <div class="page">
     <header>
-      <h1>Hello, I'm Shane Yeoh</h1>
+      <h1 class="section-title">Hello, I'm Shane Yeoh</h1>
     </header>
 
     <main>
-      <p>Studied law. Preferred building and selling things. Went into tech.</p>
+      <section>
+        <p>I like doing things.</p>
 
-      <p>Joined a startup, Affinidi, something to make the cross-border patient journey a lot more pleasant. I learnt a lifetime's worth of product craft and still got to wear many other hats. Sat across the table from patients, medical concierges and large healthcare groups.</p>
+        <p>Now, I'm running <a href="https://www.generalmemory.co/">General Memory</a>. The idea is to be the biographer and archivist of every individual, community and organisation in the world. We're starting with a bespoke luxury service where we spend hours understanding a client's life stories and then transform them into unique and beautiful artefacts designed to last generations.</p>
 
-      <p>Then I handled the build and migration of enterprise software and piloted AI integrations at ComfortDelgro, a regional transportation and logistics company. Complex systems, complex stakeholders, lots of negotiation.</p>
+        <p>Currently learning: Organisational theory, mechanistic interpretability, how to do a smoother muay thai switch kick, how to not kill my bonsai.</p>
 
-      <p>Next, I helped make digital news media products more fun at The Straits Times, Singapore's newspaper of record. Figured out where AI really matters to consumers and fell in love with staring at data to make sense of things.</p>
+        <section class="projects" aria-label="Projects">
+          <p>Projects:</p>
+          <ul>
+            <li><a href="https://secondorders.co/">Second Orders</a> - a podcast on what happens after the future</li>
+            <li><a href="https://apps.apple.com/sg/app/ergo-know-your-values/id6759443920">Ergo</a> - a fitness tracker for your worldview and values</li>
+            <li><a href="https://www.mirrur.club/">Mirrur</a> - a website to take personality quizzes and share your results with friends</li>
+          </ul>
+        </section>
+      </section>
 
-      <p>Now, I'm running <a href="https://www.generalmemory.co/">General Memory</a>. The idea is to be the biographer and archivist of every individual, community and organisation in the world. We're starting with a bespoke luxury service where we spend hours understanding a client's life stories and then transform them into unique and beautiful artefacts designed to last generations.</p>
+      <section>
+        <h2 class="section-title">What I've done with my time</h2>
 
-      <p>I like doing things.</p>
+        <p>Studied law. Preferred building and selling things. Went into tech.</p>
 
-      <p>Currently learning: Organisational theory, mechanistic interpretability, how to do a smoother muay thai switch kick, how to not kill my bonsai.</p>
+        <p>Joined a startup, Affinidi, something to make the cross-border patient journey a lot more pleasant. I learnt a lifetime's worth of product craft and still got to wear many other hats. Sat across the table from patients, medical concierges and large healthcare groups.</p>
 
-      <section class="projects" aria-label="Projects">
-        <p>Projects:</p>
-        <ul>
-          <li><a href="https://secondorders.co/">Second Orders</a> - a podcast on what happens after the future</li>
-          <li><a href="https://apps.apple.com/sg/app/ergo-know-your-values/id6759443920">Ergo</a> - a fitness tracker for your worldview and values</li>
-          <li><a href="https://www.mirrur.club/">Mirrur</a> - a website to take personality quizzes and share your results with friends</li>
-        </ul>
+        <p>Then I handled the build and migration of enterprise software and piloted AI integrations at ComfortDelgro, a regional transportation and logistics company. Complex systems, complex stakeholders, lots of negotiation.</p>
+
+        <p>Next, I helped make digital news media products more fun at The Straits Times, Singapore's newspaper of record. Figured out where AI really matters to consumers and fell in love with staring at data to make sense of things.</p>
       </section>
     </main>
 
